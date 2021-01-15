@@ -1,0 +1,89 @@
+<!-- MEU PRIMEIRO HTML -->
+<!-- ============================================================================= -->
+<!--
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Site do Robson</title>
+    <meta charset="utf-8">
+
+<body>
+    <h1>Meu Primeiro HTML</h1>
+</body>
+
+</html>
+-->
+<!-- ============================================================================= -->
+<!-- ALERT JAVA SCRIPT DENTRO DO HTML-->
+<!-- ============================================================================= -->
+<!--
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Site do Robson</title>
+    <meta charset="utf-8">
+
+<body>  Tudo que estiver dentro da tag script que está dentro do html vai ser um JavaScipt
+    <script>
+        alert("meu primeiros js"); //Esse comando gera um pop-up com com a mensagem do parêntese//
+    </script>
+    <h1>Meu segundo html</h1>
+</body>
+
+</html>
+-->
+<!-- ============================================================================= -->
+<!-- ALERT JAVA SCRIPT DENTRO DO HTML -->
+<!-- ============================================================================= -->
+<!--
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Site do Robson</title>
+    <meta charset="utf-8">
+   <script type="text/javascript" src="js/main.js"></script>  Sinaliza que o java script esta em outra página e não dentro do html
+
+<body>
+    <h1>Meu segundo html</h1>
+</body>
+
+</html>
+-->
+<!-- ============================================================================= -->
+<!--  CRIANDO UM BOTÃO -->
+<!-- ============================================================================= -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Site do Robson</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/main.js"></script>
+    <!--Sinaliza que o java script esta em outra página e não dentro do html -->
+
+<body onload="load()">
+    <!--Ao carregar o body ele carrega a função que dispara na tela um pop-up dizendo que a página foi carregada-->
+    <button type="button" onclick="clique_aqui()">Clique aqui></button>
+    <button type="button" onclick="clique_la()">Clique aqui parar ir para outra página></button>
+    <p id="Agradecimento" onclick=""></p>
+    <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse lá</p>
+    <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse lá</p>
+    <!-- onmouseover serve para passar o mouse e ele ativar algo como um alert ou um console.log-->
+    <!-- onmouseout serve para voltar ao que era antes depois de ter passado o mouse-->
+    <!--o this serve para "burlar o id que é único" e fazer mudanças em vários elementos-->
+    <!--esse declaração pode ser removida sem interferir no resultado- - ->>> id = "mousemove2" -->
+    <select onchange="funcaochange(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+        <option value="4">Valor 4</option>
+        <option value="5">Valor 5</option>
+    </select>
+<!--onchange é um coletor de informações assim que ele muda o sistema captura -->
+</body>
+
+</html>

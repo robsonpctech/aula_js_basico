@@ -1,0 +1,149 @@
+/* SETIMOS TESTES = CRIANDO BOTÃO LINKADO COM HTML */
+function clicou()
+    {
+        document.getElementById("agradecimento").innerHTML = "((<b>Obrigado por Clicar</b>))";//ao clicar na 2 string ela vai abrir a página da Disney e o <b> significa negrito
+        console.log(document.getElementById("agradecimento"));
+        //alert("obrigado por clicar");
+
+    }
+    function redirecionar()
+    {
+        window.open("https://disney.com.br");//abre a página Disney em uma outra aba do navegador
+        //window.location.href = "https://disney.com.br";//abre a página Disney sem mudar de aba do navegador
+    }
+
+function trocar()
+    {
+        document.getElementById("mousemove").innerHTML = "Obrigado por passar o mouse";
+    }
+
+    function voltar()
+    {
+        document.getElementById("mousemove").innerHTML = "Passe o mouse aqui";
+    }
+
+/* QUINTOS TESTES = LAÇOS DE REPETIÇÃO - FOR
+
+var count // essa opção é opcional quendo se usa repetições
+for(count = 0; count <= 5; count++)
+    {
+        alert(count);
+    };
+*/
+
+// ===================================================================
+
+/* QUINTOS TESTES = LAÇOS DE REPETIÇÃO - WHILE
+
+var contagem = prompt("Qual número você deseja começar a contar ?");
+var count = contagem;
+while (count <= 11)
+    {
+        console.log(count);
+        //count++ //acrecenta mais 1 ao count que vai até 6
+        //count = count + 1; //acrecenta mais 1 ao count que vai até 6
+        alert(count++);
+    };
+*/
+
+/* QUARTOS TESTES = CONDICIONAIS
+
+var idade = prompt("Qual a sua idade ?");
+// var idade = 18;
+if (idade >= 18)
+    {
+        alert("Maior de idade");
+    }
+else
+    { 
+        alert("menor de idade");
+    }; 
+    
+
+    /* QUARTOS TESTES = LISTA DE DICIONÁRIOS
+
+var frutas = [{nome:"maça", cor:"vermelha"}, {nome:"abacate", cor:"verde"}]
+console.log(frutas);
+alert(frutas[1].nome);
+*/
+
+/* TERCEIROS TESTES = DICIONÁRIOS
+
+var fruta  = {nome: "maça", cor: "vermelha", tamanho: "pequena"}
+console.log(fruta.nome);
+alert(fruta.cor);
+*/
+
+/* SEGUNDOS TESTES
+
+//var lista = ["maça","pêra", "laranja", "cereja"];
+//lista.push("uva"); //adiciona mais um item a lista
+//lista.pop(); //remove o último item da lista
+//console.log(lista); //mostra toda a lita
+//console.log(lista.length);//mostra a quantidade de itens da lista
+//console.log(lista.toString());//transforma a lista em string
+//console.log(lista.join("  | "));//posso usar separadores ou espaço etc
+
+
+/* PRIMEIROS TESTES
+
+var nome = "Robson P. Coutinho";
+var idade = 32;
+var idade2 = 7;
+var frase = "Japão é o melhor time do mundo";
+
+alert(nome + " tem " + idade +" anos");
+alert (idade + idade2);
+
+console.log(nome);
+console.log(idade);
+console.log(frase.toUpperCase()); // colocar todas as palavras em maiúsculas
+console.log(frase.toLowerCase()); // coloca todas as frases em minúsculo
+console.log(frase.replace("Japão", " Brasil ")); // substitui a palavra japão por brasil
+alert(frase.replace("Japão ", " Brasil ")); // Imprime em um pop-up
+*/
+
+<!--
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Minha pagina   </title>
+            <meta charset="utf-8">
+            <script type="text/javascript" src="js/main.js"></script>
+        </head>
+    <body>
+         <h1>Minha página</h1>
+    </body>
+</html>
+//-->
+
+<!--  CRIANDO BOTÃO LINKADO COM JAVASCRIPT //-->
+<!--  
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Site do Robson</title>
+            <meta charset="utf-8">
+            <script type="text/javascript" src="js/main.js"></script>
+        </head>
+    <body>
+         <button type="buton" onclick = "clicou()">Clique Aqui</button>
+       <p id = "agradecimento" onclick = "redirecionar()"></p>
+       <p id = "mousemove"onmouseover = "trocar()" onmouseout="voltar()">Passe o mouse aqui</p>
+    </body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
